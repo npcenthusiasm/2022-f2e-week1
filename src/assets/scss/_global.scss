@@ -1,0 +1,52 @@
+body {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  @include ipad {
+    font-size: 18px;
+  }
+}
+
+.text-title-h1 {
+  font-size: 20px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 32px;
+  }
+}
+.text-title-h2 {
+  font-size: 28px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 60px;
+  }
+}
+.text-title-h3 {
+  font-size: 24px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 44px;
+  }
+}
+.text-title-h4 {
+  font-size: 20px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 32px;
+  }
+}
+.text-title-h5 {
+  font-size: 18px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 24px;
+  }
+}
+
+.text-highlight-desc {
+  font-size: 18px;
+  font-weight: 700;
+  @include ipad {
+    font-size: 24px;
+  }
+}
