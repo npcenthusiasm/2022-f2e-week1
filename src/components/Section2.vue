@@ -1,10 +1,16 @@
 <template>
-  <div>
-      <ImageText src="/images/bg/bg_talking.png" :width="736" :height="151">
+  <div class="section2-title">
+    <ImageText
+      ref="sectionTitle"
+      src="/images/bg/bg_talking.png"
+      :width="736"
+      :height="151"
+    >
       <template #text>你是否也有一樣的困擾</template>
-      </ImageText>
-      <!-- <img src="/images/bg/bg_talking.png" alt="" class="logo-text"> -->
-      <img src="/images/main/start.png" alt="" class="start-bg">
+    </ImageText>
+  </div>
+  <!-- <img src="/images/bg/bg_talking.png" alt="" class="logo-text"> -->
+  <!-- <img src="/images/main/start.png" alt="" class="start-bg">
       <img src="/images/main/road.png" alt="" class="road-bg">
       <img src="/images/bg/bg_decorate_01.png" alt="" class="cloud-1">
       <img src="/images/bg/bg_decorate_05.png" alt="" class="cloud-2">
@@ -33,22 +39,44 @@
           <img src="/images/main/ready_2.png" alt="" class="ready_2">
           <img src="/images/main/ready_3.png" alt="" class="ready_3">
         </div>
-      </div>
+      </div> -->
 
-
-      <div class="title-text bg-highlight text-white text-title-h4 inline-block px-10 py-2 rounded-full">互動式網頁設計</div>
-
-  </div>
+  <!-- <div class="title-text bg-highlight text-white text-title-h4 inline-block px-10 py-2 rounded-full">互動式網頁設計</div> -->
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap'
-import scrollTrigger from 'gsap/ScrollTrigger'
+import gsap from "gsap";
+import scrollTrigger from "gsap/ScrollTrigger";
 
-import { onMounted } from "vue";
-import ImageText from './ImageText.vue'
+import { onMounted, ref } from "vue";
+import ImageText from "./ImageText.vue";
+
+const props = defineProps({
+  sectionStart: {
+    type: Number,
+    required: true,
+  },
+});
 
 onMounted(() => {
+  gsap.registerPlugin(scrollTrigger);
+  const sectionTitle = ref(null);
+
+  const speed = 100;
+  const tl = gsap.timeline();
+  scrollTrigger.create({
+    animation: tl,
+    trigger: ".scrollElement",
+    start: `${props.sectionStart} top`,
+    end: `${props.sectionStart + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl.from(".section2-title", { opacity: 0 }, 0);
+  // tl.to('.cloud-2', { y: 0 * speed, x: -2 * speed, scale: 0.8}, 0)
+  // tl.to(['.yellow-light', '.green-light'], { y: 0 , x: 0, opacity: 0}, 0)
+  //
 
   // const tl = gsap.timeline()
   // tl.to('.cloud-2', {
@@ -83,7 +111,7 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 @use "sass:math";
 @function relative-height-percent($value) {
   @return math.div($value, 1080px) * 100%;
@@ -100,8 +128,6 @@ onMounted(() => {
 @function relative-light-width-percent($value) {
   @return math.div($value, 275px) * 100%;
 }
-
-
 
 // .app-screen {
 //   position: fixed;
@@ -141,7 +167,7 @@ onMounted(() => {
 //   width: relative-width-percent(1175px);
 // }
 
-// .cloud-1 {
+// .section-title {
 //   position: absolute;
 //   top: relative-height-percent(423px);
 //   left: relative-width-percent(142px);
@@ -198,8 +224,6 @@ onMounted(() => {
 //   }
 // }
 
-
-
 // .f2e-info-area {
 //   display: flex;
 //   justify-content: space-around;
@@ -209,7 +233,6 @@ onMounted(() => {
 //   top: relative-height-percent(371px);
 //   left: relative-width-percent(362px);
 // }
-
 
 // .light-area {
 //   position: absolute;
@@ -270,7 +293,4 @@ onMounted(() => {
 //   left: relative-width-percent(30px);
 //   width: relative-width-percent(260px);
 // }
-
 </style>
-
-
