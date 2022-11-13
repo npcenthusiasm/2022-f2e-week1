@@ -10,5 +10,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '/images': 'src/assets/images',
     }
-  }
+  },
+  base: process.env.NODE_ENV === 'production' ? '/2022-f2e-week1/' : './',
 })
