@@ -2,464 +2,490 @@
   <div>
     <div class="app-screen bg-secondary h-screen relative">
       <img src="/images/logo/logo_text.png" alt="" class="logo-text" />
-      <img src="/images/main/start.png" alt="" class="start-bg" />
-      <img src="/images/main/road.png" alt="" class="road-bg" />
-      <img src="/images/bg/bg_decorate_01.png" alt="" class="cloud-1" />
-      <img src="/images/bg/bg_decorate_05.png" alt="" class="cloud-2" />
 
-      <img src="/images/character/character_f2e.gif" alt="" class="ch_f2e" />
-      <img src="/images/character/character_ui.gif" alt="" class="ch_ui" />
-      <img src="/images/character/character_team.gif" alt="" class="ch_team" />
+      <!-- 
+        SECTION 1
+      -->
+      <section>
+        <img src="/images/logo/logo_text.png" alt="" class="logo-text" />
+        <img src="/images/main/start.png" alt="" class="start-bg" />
+        <img src="/images/main/road.png" alt="" class="road-bg" />
+        <img src="/images/bg/bg_decorate_01.png" alt="" class="cloud-1" />
+        <img src="/images/bg/bg_decorate_05.png" alt="" class="cloud-2" />
 
-      <div class="btn-join-area">
-        <div class="text-primary text-title-h5 mb-2">JOIN</div>
-        <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
-        <img src="/images/btn/btn_join.png" alt="" class="btn_join" />
-      </div>
+        <img src="/images/character/character_f2e.gif" alt="" class="ch_f2e" />
+        <img src="/images/character/character_ui.gif" alt="" class="ch_ui" />
+        <img
+          src="/images/character/character_team.gif"
+          alt=""
+          class="ch_team"
+        />
 
-      <img src="/images/main/map.svg" alt="" class="map" />
-
-      <div class="traffic-light-area inline-block">
-        <div class="text-center text-highlight text-title-h4">READY?</div>
-        <div class="light-wrap">
-          <img src="/images/main/ready_frame.png" alt="" class="ready_frame" />
-          <img src="/images/main/ready_1.png" alt="" class="green-light" />
-          <img src="/images/main/ready_2.png" alt="" class="yellow-light" />
-          <img src="/images/main/ready_3.png" alt="" class="red-light" />
+        <div class="btn-join-area">
+          <div class="text-primary text-title-h5 mb-2">JOIN</div>
+          <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
+          <img src="/images/btn/btn_join.png" alt="" class="btn_join" />
         </div>
-      </div>
 
-      <div
-        class="title-text bg-highlight text-white text-title-h4 inline-block px-10 py-2 rounded-full"
-      >
-        互動式網頁設計
-      </div>
+        <img src="/images/main/map.svg" alt="" class="map" />
 
-      <div class="f2e-info-area">
-        <div class="f2e-area">
-          <div class="text-primary text-title-h5 mb-2">前端工程師</div>
-          <div
-            class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
-          >
-            920
+        <div class="traffic-light-area inline-block">
+          <div class="text-center text-highlight text-title-h4">READY?</div>
+          <div class="light-wrap">
+            <img
+              src="/images/main/ready_frame.png"
+              alt=""
+              class="ready_frame"
+            />
+            <img src="/images/main/ready_1.png" alt="" class="green-light" />
+            <img src="/images/main/ready_2.png" alt="" class="yellow-light" />
+            <img src="/images/main/ready_3.png" alt="" class="red-light" />
           </div>
         </div>
 
-        <div class="f2e-area">
-          <div class="text-primary text-title-h5 mb-2">UI 設計師</div>
-          <div
-            class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
-          >
-            920
-          </div>
+        <div
+          class="title-text bg-highlight text-white text-title-h4 inline-block px-10 py-2 rounded-full"
+        >
+          互動式網頁設計
         </div>
 
-        <div class="f2e-area">
-          <div class="text-primary text-title-h5 mb-2">團體組</div>
-          <div
-            class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
-          >
-            41
+        <div class="f2e-info-area">
+          <div class="f2e-area">
+            <div class="text-primary text-title-h5 mb-2">前端工程師</div>
+            <div
+              class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
+            >
+              920
+            </div>
+          </div>
+
+          <div class="f2e-area">
+            <div class="text-primary text-title-h5 mb-2">UI 設計師</div>
+            <div
+              class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
+            >
+              920
+            </div>
+          </div>
+
+          <div class="f2e-area">
+            <div class="text-primary text-title-h5 mb-2">團體組</div>
+            <div
+              class="bg-primary text-white text-title-h4 inline-block px-10 py-1 rounded-full"
+            >
+              41
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- 
         SECTION 2
       -->
 
-      <div class="section2-title">
-        <img
-          src="/images/bg/bg_talking.png"
-          alt=""
-          class=""
-          width="736"
-          height="151"
-        />
-      </div>
+      <section>
+        <div class="section2__title section-title">
+          <img
+            src="/images/text/talking_2.png"
+            alt=""
+            class=""
+            width="736"
+            height="151"
+          />
+        </div>
 
-      <img src="/images/bg/bg_decorate_09.png" alt="" class="cloud-3" />
-      <img src="/images/bg/bg_decorate_09.png" alt="" class="cloud-4" />
+        <img src="/images/bg/bg_decorate_09.png" alt="" class="cloud-3" />
+        <img src="/images/bg/bg_decorate_09.png" alt="" class="cloud-4" />
 
-      <img src="/images/main/question_1.png" alt="" class="question_1" />
-      <img src="/images/main/question_2.png" alt="" class="question_2" />
-      <img src="/images/main/question_3.png" alt="" class="question_3" />
+        <img src="/images/main/question_1.png" alt="" class="question_1" />
+        <img src="/images/main/question_2.png" alt="" class="question_2" />
+        <img src="/images/main/question_3.png" alt="" class="question_3" />
+      </section>
 
       <!-- 
         SECTION 3
       -->
 
-      <div class="section3-title">
-        <img
-          src="/images/bg/bg_talking.png"
-          alt=""
-          class=""
-          width="736"
-          height="151"
-        />
-      </div>
+      <section>
+        <div class="section3__title section-title">
+          <img
+            src="/images/text/talking_3.png"
+            alt=""
+            class=""
+            width="736"
+            height="151"
+          />
+        </div>
 
-      <div
-        class="section3__btn_join_1 flex flex-col items-center justify-center"
-      >
-        <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
-        <div class="text-primary text-title-h4">前端工程師</div>
-      </div>
+        <div
+          class="section3__btn_join_1 flex flex-col items-center justify-center"
+        >
+          <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
+          <div class="text-primary text-title-h4">前端工程師</div>
+        </div>
 
-      <div
-        class="section3__btn_join_2 flex flex-col items-center justify-center"
-      >
-        <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
-        <div class="text-primary text-title-h4">ＵＩ設計師</div>
-      </div>
+        <div
+          class="section3__btn_join_2 flex flex-col items-center justify-center"
+        >
+          <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
+          <div class="text-primary text-title-h4">ＵＩ設計師</div>
+        </div>
 
-      <div
-        class="section3__btn_join_3 flex flex-col items-center justify-center"
-      >
-        <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
-        <div class="text-primary text-title-h4">團體組(UI+前端)</div>
-      </div>
+        <div
+          class="section3__btn_join_3 flex flex-col items-center justify-center"
+        >
+          <img src="/images/btn/btn_join.png" alt="" class="mb-4" />
+          <div class="text-primary text-title-h4">團體組(UI+前端)</div>
+        </div>
+      </section>
 
       <!-- 
         SECTION 4
       -->
 
-      <div class="section4-title">
-        <img
-          src="/images/bg/bg_talking.png"
-          alt=""
-          class=""
-          width="736"
-          height="151"
-        />
-      </div>
+      <section>
+        <div class="section4__title section-title">
+          <img src="/images/text/talking_4.png" alt="" class="" />
+        </div>
 
-      <div class="section4__stage1 flex items-start">
-        <img src="/images/main/week_1.png" alt="" class="mr-10" />
-        <div class="flex flex-col">
-          <div class="text-highlight text-title-h2">WEEK 1</div>
-          <div class="text-primary text-title-h3">The F2E 活動網站設計</div>
-          <div class="flex mb-6">
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
-            >
-              Parallax Scrolling
+        <div class="section4__stage1 flex items-start">
+          <img src="/images/main/week_1.png" alt="" class="mr-10" />
+          <div class="flex flex-col">
+            <div class="text-highlight text-title-h2">WEEK 1</div>
+            <div class="text-primary text-title-h3">The F2E 活動網站設計</div>
+            <div class="flex mb-6">
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
+              >
+                Parallax Scrolling
+              </div>
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
+              >
+                #版塊設計
+              </div>
             </div>
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
-            >
-              #版塊設計
-            </div>
-          </div>
-          <div>
-            <div
-              class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
-            >
-              查看關卡細節
+            <div>
+              <div
+                class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
+              >
+                查看關卡細節
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section4__stage2 flex flex-row-reverse items-start">
-        <img src="/images/main/week_2.png" alt="" class="ml-10" />
-        <div class="flex flex-col">
-          <div class="text-highlight text-title-h2">WEEK 2</div>
-          <div class="text-primary text-title-h3">今晚，我想來點點簽</div>
-          <div class="flex mb-6">
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
-            >
-              Canvas
+        <div class="section4__stage2 flex flex-row-reverse items-start">
+          <img src="/images/main/week_2.png" alt="" class="ml-10" />
+          <div class="flex flex-col">
+            <div class="text-highlight text-title-h2">WEEK 2</div>
+            <div class="text-primary text-title-h3">今晚，我想來點點簽</div>
+            <div class="flex mb-6">
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
+              >
+                Canvas
+              </div>
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
+              >
+                #凱鈿行動科技
+              </div>
             </div>
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
-            >
-              #凱鈿行動科技
-            </div>
-          </div>
-          <div>
-            <div
-              class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
-            >
-              查看關卡細節
+            <div>
+              <div
+                class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
+              >
+                查看關卡細節
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section4__stage3 flex items-start">
-        <img src="/images/main/week_3.png" alt="" class="mr-10" />
-        <div class="flex flex-col">
-          <div class="text-highlight text-title-h2">WEEK 3</div>
-          <div class="text-primary text-title-h3">Scrum 新手村</div>
-          <div class="flex mb-6">
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
-            >
-              JS draggable
+        <div class="section4__stage3 flex items-start">
+          <img src="/images/main/week_3.png" alt="" class="mr-10" />
+          <div class="flex flex-col">
+            <div class="text-highlight text-title-h2">WEEK 3</div>
+            <div class="text-primary text-title-h3">Scrum 新手村</div>
+            <div class="flex mb-6">
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark mr-4"
+              >
+                JS draggable
+              </div>
+              <div
+                class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
+              >
+                #鈦坦科技
+              </div>
             </div>
-            <div
-              class="px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark"
-            >
-              #鈦坦科技
-            </div>
-          </div>
-          <div>
-            <div
-              class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
-            >
-              查看關卡細節
+            <div>
+              <div
+                class="inline-block px-6 py-1 rounded-full border border-secondary-dark bg-secondary-dark text-white"
+              >
+                查看關卡細節
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- 
         SECTION 5
       -->
-      <div class="section5__dateline-wrap">
-        <div class="section5__dateline_block"></div>
-        <img
-          class="section5__dateline"
-          src="/images/main/date_line.png"
-          alt=""
-        />
-      </div>
 
-      <img
-        class="section5__date_weekLine1"
-        src="/images/main/date_weekLine.png"
-        alt=""
-      />
-      <div class="section5__date_weekLine1-content">
-        <div
-          class="section5__btn_join_1 flex flex-col items-center justify-center"
-        >
-          <img src="/images/btn/btn_join.png" alt="" class="mb-4" width="103" />
-          <div class="text-highlight text-title-h2">SIGN UP</div>
-          <div
-            class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
-          >
-            10/13 - 11/6
-          </div>
-          <div class="text-secondary-dark text-center">
-            截止前可修改報名組別
-          </div>
-        </div>
-      </div>
-
-      <img
-        class="section5__date_weekLine2"
-        src="/images/main/date_weekLine.png"
-        alt=""
-      />
-      <div class="section5__date_weekLine2-content">
-        <div
-          class="section5__btn_join_1 flex flex-col items-center justify-center"
-        >
+      <section>
+        <div class="section5__dateline-wrap">
+          <div class="section5__dateline_block"></div>
           <img
-            src="/images/main/date_start.png"
+            class="section5__dateline"
+            src="/images/main/date_line.png"
             alt=""
-            class="mb-4"
-            width="140"
           />
-          <div class="text-highlight text-title-h2">START</div>
-          <div
-            class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
-          >
-            10/31 - 11/28
-          </div>
-          <div class="text-secondary-dark text-center">
-            10/31(一) UI、團體組開賽<br />
-            11/7(一) 前端組開賽
-          </div>
         </div>
-      </div>
 
-      <div class="section5__weekLine">
         <img
-          class="section5__date_weekLine3"
+          class="section5__date_weekLine1"
           src="/images/main/date_weekLine.png"
           alt=""
         />
-      </div>
-      <div class="section5__date_weekLine3-content">
-        <div
-          class="section5__btn_join_1 flex flex-col items-center justify-center"
-        >
-          <img
-            src="/images/main/date_upload.png"
-            alt=""
-            class="mb-4"
-            width="140"
-          />
-          <div class="text-highlight text-title-h2">UPLOAD</div>
+        <div class="section5__date_weekLine1-content">
           <div
-            class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
+            class="section5__btn_join_1 flex flex-col items-center justify-center"
           >
-            10/31 - 11/28
-          </div>
-          <div class="text-secondary-dark text-center">
-            依賽程登錄作品<br />
-            <span class="text-highlight"> 額外競賽： 主題豐厚獎金等著你</span>
+            <img
+              src="/images/btn/btn_join.png"
+              alt=""
+              class="mb-4"
+              width="103"
+            />
+            <div class="text-highlight text-title-h2">SIGN UP</div>
+            <div
+              class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
+            >
+              10/13 - 11/6
+            </div>
+            <div class="text-secondary-dark text-center">
+              截止前可修改報名組別
+            </div>
           </div>
         </div>
-      </div>
 
-      <img
-        src="/images/bg/bg_decorate_03.png"
-        alt=""
-        class="section5__cloud-left"
-      />
-      <img
-        src="/images/bg/bg_decorate_07.png"
-        alt=""
-        class="section5__cloud-right"
-      />
+        <img
+          class="section5__date_weekLine2"
+          src="/images/main/date_weekLine.png"
+          alt=""
+        />
+        <div class="section5__date_weekLine2-content">
+          <div
+            class="section5__btn_join_1 flex flex-col items-center justify-center"
+          >
+            <img
+              src="/images/main/date_start.png"
+              alt=""
+              class="mb-4"
+              width="140"
+            />
+            <div class="text-highlight text-title-h2">START</div>
+            <div
+              class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
+            >
+              10/31 - 11/28
+            </div>
+            <div class="text-secondary-dark text-center">
+              10/31(一) UI、團體組開賽<br />
+              11/7(一) 前端組開賽
+            </div>
+          </div>
+        </div>
 
-      <div class="section5__text2 w-full text-title-h2 text-highlight">
-        <div class="text-center">區區修煉已經無法滿足了嗎？</div>
-      </div>
+        <div class="section5__weekLine">
+          <img
+            class="section5__date_weekLine3"
+            src="/images/main/date_weekLine.png"
+            alt=""
+          />
+        </div>
+        <div class="section5__date_weekLine3-content">
+          <div
+            class="section5__btn_join_1 flex flex-col items-center justify-center"
+          >
+            <img
+              src="/images/main/date_upload.png"
+              alt=""
+              class="mb-4"
+              width="140"
+            />
+            <div class="text-highlight text-title-h2">UPLOAD</div>
+            <div
+              class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3"
+            >
+              10/31 - 11/28
+            </div>
+            <div class="text-secondary-dark text-center">
+              依賽程登錄作品<br />
+              <span class="text-highlight"> 額外競賽： 主題豐厚獎金等著你</span>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/images/bg/bg_decorate_03.png"
+          alt=""
+          class="section5__cloud-left"
+        />
+        <img
+          src="/images/bg/bg_decorate_07.png"
+          alt=""
+          class="section5__cloud-right"
+        />
+
+        <div class="section5__text2 w-full text-title-h2 text-highlight">
+          <div class="text-center">區區修煉已經無法滿足了嗎？</div>
+        </div>
+      </section>
 
       <!-- 
         SECTION 6
       -->
 
-      <div class="section6__title">
-        <img
-          src="/images/bg/bg_talking.png"
-          alt=""
-          class=""
-          width="736"
-          height="151"
-        />
-      </div>
-
-      <!-- 這邊想要下怎麼不要用 abs -->
-      <div class="section6__award">
-        <img
-          src="/images/main/award_light.png"
-          alt=""
-          class="section6__award_light"
-          width="736"
-          height="151"
-        />
-        <img
-          src="/images/main/award_trophy.png"
-          alt=""
-          class="section6__award_trophy"
-          width="736"
-          height="151"
-        />
-      </div>
-      <div class="section6__content">
-        <div class="mb-8">
-          <div class="text-highlight text-title-h4">評審機制</div>
-          <div class="text-primary">
-            初選： 將由六角學院前端、UI 評審進行第一波篩選。<br />
-            決選： 由六角學院與贊助廠商討論，進行最後篩選，並於 12/30(五)
-            由評審進行直播公布名單！
-          </div>
+      <section>
+        <div class="section6__title section-title">
+          <img src="/images/text/talking_6.png" alt="" class="" />
         </div>
 
-        <div class="">
-          <div class="text-highlight text-title-h4">獎項</div>
-          <div class="text-primary">
-            <ol>
-              <li>1. 初選佳作 共六十位 數位獎狀</li>
-              <li>
-                2. 個人企業獎 共六位 NTD
-                <span class="text-highlight text-highlight-desc">3,000</span>
-                /位
-              </li>
-              <li>
-                3. 團體企業獎 共三組 NTD
-                <span class="text-highlight text-highlight-desc">10,000</span>
-                /組
-              </li>
-              <li>4. 以上皆提供完賽數位獎狀</li>
-            </ol>
+        <!-- 這邊想要下怎麼不要用 abs -->
+        <div class="section6__award">
+          <img
+            src="/images/main/award_light.png"
+            alt=""
+            class="section6__award_light"
+            width="736"
+            height="151"
+          />
+          <img
+            src="/images/main/award_trophy.png"
+            alt=""
+            class="section6__award_trophy"
+            width="736"
+            height="151"
+          />
+        </div>
+        <div class="section6__content">
+          <div class="mb-8">
+            <div class="text-highlight text-title-h4">評審機制</div>
+            <div class="text-primary">
+              初選： 將由六角學院前端、UI 評審進行第一波篩選。<br />
+              決選： 由六角學院與贊助廠商討論，進行最後篩選，並於 12/30(五)
+              由評審進行直播公布名單！
+            </div>
+          </div>
+
+          <div class="">
+            <div class="text-highlight text-title-h4">獎項</div>
+            <div class="text-primary">
+              <ol>
+                <li>1. 初選佳作 共六十位 數位獎狀</li>
+                <li>
+                  2. 個人企業獎 共六位 NTD
+                  <span class="text-highlight text-highlight-desc">3,000</span>
+                  /位
+                </li>
+                <li>
+                  3. 團體企業獎 共三組 NTD
+                  <span class="text-highlight text-highlight-desc">10,000</span>
+                  /組
+                </li>
+                <li>4. 以上皆提供完賽數位獎狀</li>
+              </ol>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- 
         SECTION 7
       -->
-      <img src="/images/text/talking.png" alt="" class="section7__title" />
-      <img
-        src="/images/bg/bg_decorate_08.png"
-        alt=""
-        class="section7__tree-left"
-      />
-      <img
-        src="/images/bg/bg_decorate_08.png"
-        alt=""
-        class="section7__tree-right"
-      />
 
-      <div class="section7__logo-wrap-1 text-center">
-        <img src="/images/main/logo_blockstudio.png" alt="" class="mb-4" />
+      <section>
+        <img
+          src="/images/text/talking_7.png"
+          alt=""
+          class="section7__title section-title"
+        />
+        <img
+          src="/images/bg/bg_decorate_08.png"
+          alt=""
+          class="section7__tree-left"
+        />
+        <img
+          src="/images/bg/bg_decorate_08.png"
+          alt=""
+          class="section7__tree-right"
+        />
 
-        <div
-          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
-        >
-          #版塊設計
+        <div class="section7__logo-wrap-1 text-center">
+          <img src="/images/main/logo_blockstudio.png" alt="" class="mb-4" />
+
+          <div
+            class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+          >
+            #版塊設計
+          </div>
         </div>
-      </div>
 
-      <div class="section7__logo-wrap-2 text-center">
-        <img src="/images/main/logo_titansoft.png" alt="" class="mb-4" />
+        <div class="section7__logo-wrap-2 text-center">
+          <img src="/images/main/logo_titansoft.png" alt="" class="mb-4" />
 
-        <div
-          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
-        >
-          #鈦坦科技
+          <div
+            class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+          >
+            #鈦坦科技
+          </div>
         </div>
-      </div>
 
-      <div class="section7__logo-wrap-3 text-center">
-        <img src="/images/main/logo_kdanmobile.png" alt="" class="mb-4" />
+        <div class="section7__logo-wrap-3 text-center">
+          <img src="/images/main/logo_kdanmobile.png" alt="" class="mb-4" />
 
-        <div
-          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
-        >
-          #凱鈿科技
+          <div
+            class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+          >
+            #凱鈿科技
+          </div>
         </div>
-      </div>
 
-      <img
-        src="/images/bg/bg_decorate_01.png"
-        alt=""
-        class="section7__cloud-left"
-      />
-      <img
-        src="/images/bg/bg_decorate_05.png"
-        alt=""
-        class="section7__cloud-right"
-      />
+        <img
+          src="/images/bg/bg_decorate_01.png"
+          alt=""
+          class="section7__cloud-left"
+        />
+        <img
+          src="/images/bg/bg_decorate_05.png"
+          alt=""
+          class="section7__cloud-right"
+        />
 
-      <img src="/images/main/finish.png" alt="" class="section7__finish" />
+        <img src="/images/main/finish.png" alt="" class="section7__finish" />
 
-      <img
-        src="/images/main/finishLine_l.png"
-        alt=""
-        class="section7__finishLine_l"
-      />
-      <img
-        src="/images/main/finishLine_r.png"
-        alt=""
-        class="section7__finishLine_r"
-      />
+        <img
+          src="/images/main/finishLine_l.png"
+          alt=""
+          class="section7__finishLine_l"
+        />
+        <img
+          src="/images/main/finishLine_r.png"
+          alt=""
+          class="section7__finishLine_r"
+        />
 
-      <img src="/images/logo/logo.png" alt="" class="section7__logo" />
+        <img src="/images/logo/logo.png" alt="" class="section7__logo" />
 
-      <div class="section7__join text-center">
-        <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
-        <img src="/images/btn/btn_join.png" alt="" class="btn_join mb-5" />
-        <div class="text-highlight text-title-h2">立即報名</div>
-      </div>
+        <div class="section7__join text-center">
+          <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
+          <img src="/images/btn/btn_join.png" alt="" class="btn_join mb-5" />
+          <div class="text-highlight text-title-h2">立即報名</div>
+        </div>
+      </section>
 
       <!-- top app-screen -->
     </div>
@@ -575,7 +601,7 @@ onMounted(() => {
     markers: true,
   });
 
-  tl_2_1.from(".section2-title", { opacity: 0 }, 0);
+  tl_2_1.from(".section2__title", { opacity: 0 }, 0);
 
   const tl_2_2 = gsap.timeline();
   scrollTrigger.create({
@@ -671,7 +697,7 @@ onMounted(() => {
   });
 
   tl_2_6.to([".cloud-3", ".cloud-4"], { scale: 0.2, opacity: 0 }, 0);
-  tl_2_6.to(".section2-title", { opacity: 0 }, 0);
+  tl_2_6.to(".section2__title", { opacity: 0 }, 0);
 
   tl_2_6.to([".ch_f2e"], { scale: 1, transformOrigin: "bottom right" }, 0);
   tl_2_6.to([".ch_ui", ".road-bg"], { scale: 1, transformOrigin: "bottom" }, 0);
@@ -688,7 +714,7 @@ onMounted(() => {
     markers: true,
   });
 
-  tl_3_1.from(".section3-title", { opacity: 0 }, 0);
+  tl_3_1.from(".section3__title", { opacity: 0 }, 0);
 
   const tl_3_2 = gsap.timeline();
   scrollTrigger.create({
@@ -716,7 +742,7 @@ onMounted(() => {
     markers: true,
   });
 
-  tl_3_3.to(".section3-title", { opacity: 0 }, 0);
+  tl_3_3.to(".section3__title", { opacity: 0 }, 0);
 
   tl_3_3.to(
     [".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"],
@@ -733,7 +759,7 @@ onMounted(() => {
     scrub: 1,
     markers: true,
   });
-  tl_4_1.from(".section4-title", { opacity: 0 }, 0);
+  tl_4_1.from(".section4__title", { opacity: 0 }, 0);
 
   // 中間那隻 ch_ui 370 -> 120
   tl_4_1.to(
@@ -828,7 +854,7 @@ onMounted(() => {
     markers: true,
   });
 
-  tl_4_7_1.to(".section4-title", { opacity: 0 }, 0);
+  tl_4_7_1.to(".section4__title", { opacity: 0 }, 0);
 
   // 中間那隻 ch_ui 370 -> 220
   // TODO: 位置要在喬一下，喬到跑道上
@@ -921,7 +947,7 @@ onMounted(() => {
     markers: true,
   });
 
-  // tl_4_7_6.to(".section4-title", { opacity: 0 }, 0);
+  // tl_4_7_6.to(".section4__title", { opacity: 0 }, 0);
   tl_4_7_6.to(
     [
       ".section5__date_weekLine1",
@@ -1007,6 +1033,8 @@ onMounted(() => {
     scrub: 1,
     markers: true,
   });
+
+  tl_5_2.from([".section6__title"], { opacity: 0 }, 0);
 
   tl_5_2.from([".section6__award_light"], { rotate: 360 }, 0);
   tl_5_2.from(
@@ -1460,26 +1488,9 @@ body {
   width: relative-width-percent(260px);
 }
 
-// sectino2
-.section2-title,
-.section3-title,
-.section4-title,
-.section6__title {
+.section-title {
   position: absolute;
   top: relative-height-percent(40px);
-  left: relative-width-percent(592px);
-  width: relative-width-percent(736px);
-  height: relative-height-percent(151px);
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.section7__title {
-  position: absolute;
-  top: relative-height-percent(40px);
-  left: relative-width-percent(592px);
   left: 50%;
   transform: translateX(-50%);
 }
