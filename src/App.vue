@@ -514,6 +514,8 @@ onMounted(() => {
   // const getSectionStart = (num: number) => `top ${getStart(num) * 100}%`
   // const getSectionEnd = (num: number) => `top ${getStart(num - 100)}%`
   const speed = 100;
+  const showMarker = process.env.NODE_ENV !== "production";
+
   const tl = gsap.timeline();
   scrollTrigger.create({
     animation: tl,
@@ -521,7 +523,7 @@ onMounted(() => {
     start: "0 top",
     end: "2000 100%",
     scrub: 3,
-    markers: true,
+    markers: showMarker,
   });
 
   tl.to(".cloud-1", { y: 0 * speed, x: 2 * speed, scale: 0.8 }, 0);
@@ -538,7 +540,7 @@ onMounted(() => {
     start: "2000 top",
     end: "4000 100%",
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl2.to(".cloud-1", { y: 0 * speed, x: 3 * speed, scale: 0.6 }, 0);
@@ -553,7 +555,7 @@ onMounted(() => {
     start: "4000 top",
     end: "6000 100%",
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl3.to(".cloud-1", { y: 0 * speed, x: 3 * speed, scale: 0.4, opacity: 0 }, 0);
@@ -572,7 +574,7 @@ onMounted(() => {
     start: "6000 top",
     end: "8000 100%",
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl4.to([".traffic-light-area", ".f2e-info-area"], { opacity: 0 }, 0);
@@ -584,7 +586,7 @@ onMounted(() => {
     start: "8000 top",
     end: "10000 100%",
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl5.to([".title-text", ".logo-text", ".start-bg"], { opacity: 0 }, 0);
@@ -598,7 +600,7 @@ onMounted(() => {
     start: `${10000} top`,
     end: `${10000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_2_1.from(".section2__title", { opacity: 0 }, 0);
@@ -610,7 +612,7 @@ onMounted(() => {
     start: `${12000} top`,
     end: `${12000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   // 370px -> 225px
@@ -640,7 +642,7 @@ onMounted(() => {
     start: `${14000} top`,
     end: `${14000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   // TODO: real scale ratio
@@ -660,7 +662,7 @@ onMounted(() => {
     start: `${15000} top`,
     end: `${15000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   // TODO: real scale ratio
@@ -681,7 +683,7 @@ onMounted(() => {
     start: `${16000} top`,
     end: `${16000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_2_5.from([".question_3"], { opacity: 0, right: 0 }, 0);
@@ -693,7 +695,7 @@ onMounted(() => {
     start: `${17000} top`,
     end: `${17000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_2_6.to([".cloud-3", ".cloud-4"], { scale: 0.2, opacity: 0 }, 0);
@@ -711,7 +713,7 @@ onMounted(() => {
     start: `${19000} top`,
     end: `${19000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_3_1.from(".section3__title", { opacity: 0 }, 0);
@@ -723,7 +725,7 @@ onMounted(() => {
     start: `${21000} top`,
     end: `${21000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_3_2.from(
@@ -739,7 +741,7 @@ onMounted(() => {
     start: `${23000} top`,
     end: `${23000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_3_3.to(".section3__title", { opacity: 0 }, 0);
@@ -757,7 +759,7 @@ onMounted(() => {
     start: `${25000} top`,
     end: `${25000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
   tl_4_1.from(".section4__title", { opacity: 0 }, 0);
 
@@ -787,7 +789,7 @@ onMounted(() => {
     start: `${27000} top`,
     end: `${27000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_2.from([".section4__stage1"], { opacity: 0, y: 260 }, 0);
@@ -799,7 +801,7 @@ onMounted(() => {
     start: `${28000} top`,
     end: `${28000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_3.to([".section4__stage1"], { opacity: 0.2, y: -240 }, 0);
@@ -813,7 +815,7 @@ onMounted(() => {
     start: `${29000} top`,
     end: `${29000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_4.to([".section4__stage1"], { opacity: 0, y: -260 }, 0);
@@ -828,7 +830,7 @@ onMounted(() => {
     start: `${30000} top`,
     end: `${30000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
   tl_4_5.to([".section4__stage2"], { opacity: 0, y: -260 }, 0);
   tl_4_5.to([".section4__stage3"], { opacity: 0.2, y: -240 }, 0);
@@ -840,7 +842,7 @@ onMounted(() => {
     start: `${31000} top`,
     end: `${31000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
   tl_4_6.to([".section4__stage3"], { opacity: 0, y: -260 }, 0);
 
@@ -851,7 +853,7 @@ onMounted(() => {
     start: `${32000} top`,
     end: `${32000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_7_1.to(".section4__title", { opacity: 0 }, 0);
@@ -882,7 +884,7 @@ onMounted(() => {
     start: `${33000} top`,
     end: `${33000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_7_2.to([".section5__dateline_block"], { right: "-100%" }, 0);
@@ -895,7 +897,7 @@ onMounted(() => {
     start: `${34000} top`,
     end: `${34000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_7_3.from([".section5__date_weekLine1"], { opacity: 0 }, 0);
@@ -911,7 +913,7 @@ onMounted(() => {
     start: `${35000} top`,
     end: `${35000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_4_7_4.from([".section5__date_weekLine2"], { opacity: 0 }, 0);
@@ -928,7 +930,7 @@ onMounted(() => {
     start: `${36000} top`,
     end: `${36000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
   tl_4_7_5.from([".section5__date_weekLine3"], { opacity: 0 }, 0);
   tl_4_7_5.from(
@@ -944,7 +946,7 @@ onMounted(() => {
     start: `${37000} top`,
     end: `${37000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   // tl_4_7_6.to(".section4__title", { opacity: 0 }, 0);
@@ -993,7 +995,7 @@ onMounted(() => {
     start: `${38000} top`,
     end: `${38000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_5_1.to(
@@ -1031,7 +1033,7 @@ onMounted(() => {
     start: `${39000} top`,
     end: `${39000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_5_2.from([".section6__title"], { opacity: 0 }, 0);
@@ -1051,7 +1053,7 @@ onMounted(() => {
     start: `${40000} top`,
     end: `${40000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_5_3.to([".section6__title"], { opacity: 0 }, 0);
@@ -1070,7 +1072,7 @@ onMounted(() => {
     start: `${41000} top`,
     end: `${41000 + 1000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_7_1.from([".section7__title"], { opacity: 0 }, 0);
@@ -1090,7 +1092,7 @@ onMounted(() => {
     start: `${42000} top`,
     end: `${42000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_7_2.to([".section7__title"], { opacity: 0 }, 0);
@@ -1154,7 +1156,7 @@ onMounted(() => {
     start: `${44000} top`,
     end: `${44000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
   tl_7_3.to(
     [".section7__cloud-left"],
@@ -1208,7 +1210,7 @@ onMounted(() => {
     start: `${46000} top`,
     end: `${46000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_7_4.to([".section7__finishLine_l"], { rotate: -5, x: -20, y: 40 }, 0);
@@ -1229,7 +1231,7 @@ onMounted(() => {
     start: `${48000} top`,
     end: `${48000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_7_5.to([".section7__finishLine_l"], { opacity: 0, x: -400, y: 40 }, 0);
@@ -1246,7 +1248,7 @@ onMounted(() => {
     start: `${50000} top`,
     end: `${50000 + 2000} 100%`,
     scrub: 1,
-    markers: true,
+    markers: showMarker,
   });
 
   tl_7_6.to(
