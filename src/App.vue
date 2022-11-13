@@ -307,10 +307,159 @@
         </div>
       </div>
 
-      <!-- <div class="section5__dateline">
-      </div> -->
+      <img
+        src="/images/bg/bg_decorate_03.png"
+        alt=""
+        class="section5__cloud-left"
+      />
+      <img
+        src="/images/bg/bg_decorate_07.png"
+        alt=""
+        class="section5__cloud-right"
+      />
 
-      <!-- <Section2 :sectionStart="10000"/>  -->
+      <div class="section5__text2 w-full text-title-h2 text-highlight">
+        <div class="text-center">區區修煉已經無法滿足了嗎？</div>
+      </div>
+
+      <!-- 
+        SECTION 6
+      -->
+
+      <div class="section6__title">
+        <img
+          src="/images/bg/bg_talking.png"
+          alt=""
+          class=""
+          width="736"
+          height="151"
+        />
+      </div>
+
+      <!-- 這邊想要下怎麼不要用 abs -->
+      <div class="section6__award">
+        <img
+          src="/images/main/award_light.png"
+          alt=""
+          class="section6__award_light"
+          width="736"
+          height="151"
+        />
+        <img
+          src="/images/main/award_trophy.png"
+          alt=""
+          class="section6__award_trophy"
+          width="736"
+          height="151"
+        />
+      </div>
+      <div class="section6__content">
+        <div class="mb-8">
+          <div class="text-highlight text-title-h4">評審機制</div>
+          <div class="text-primary">
+            初選： 將由六角學院前端、UI 評審進行第一波篩選。<br />
+            決選： 由六角學院與贊助廠商討論，進行最後篩選，並於 12/30(五)
+            由評審進行直播公布名單！
+          </div>
+        </div>
+
+        <div class="">
+          <div class="text-highlight text-title-h4">獎項</div>
+          <div class="text-primary">
+            <ol>
+              <li>1. 初選佳作 共六十位 數位獎狀</li>
+              <li>
+                2. 個人企業獎 共六位 NTD
+                <span class="text-highlight text-highlight-desc">3,000</span>
+                /位
+              </li>
+              <li>
+                3. 團體企業獎 共三組 NTD
+                <span class="text-highlight text-highlight-desc">10,000</span>
+                /組
+              </li>
+              <li>4. 以上皆提供完賽數位獎狀</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        SECTION 7
+      -->
+      <img src="/images/text/talking.png" alt="" class="section7__title" />
+      <img
+        src="/images/bg/bg_decorate_08.png"
+        alt=""
+        class="section7__tree-left"
+      />
+      <img
+        src="/images/bg/bg_decorate_08.png"
+        alt=""
+        class="section7__tree-right"
+      />
+
+      <div class="section7__logo-wrap-1 text-center">
+        <img src="/images/main/logo_blockstudio.png" alt="" class="mb-4" />
+
+        <div
+          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+        >
+          #版塊設計
+        </div>
+      </div>
+
+      <div class="section7__logo-wrap-2 text-center">
+        <img src="/images/main/logo_titansoft.png" alt="" class="mb-4" />
+
+        <div
+          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+        >
+          #鈦坦科技
+        </div>
+      </div>
+
+      <div class="section7__logo-wrap-3 text-center">
+        <img src="/images/main/logo_kdanmobile.png" alt="" class="mb-4" />
+
+        <div
+          class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4"
+        >
+          #凱鈿科技
+        </div>
+      </div>
+
+      <img
+        src="/images/bg/bg_decorate_01.png"
+        alt=""
+        class="section7__cloud-left"
+      />
+      <img
+        src="/images/bg/bg_decorate_05.png"
+        alt=""
+        class="section7__cloud-right"
+      />
+
+      <img src="/images/main/finish.png" alt="" class="section7__finish" />
+
+      <img
+        src="/images/main/finishLine_l.png"
+        alt=""
+        class="section7__finishLine_l"
+      />
+      <img
+        src="/images/main/finishLine_r.png"
+        alt=""
+        class="section7__finishLine_r"
+      />
+
+      <img src="/images/logo/logo.png" alt="" class="section7__logo" />
+
+      <div class="section7__join text-center">
+        <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
+        <img src="/images/btn/btn_join.png" alt="" class="btn_join mb-5" />
+        <div class="text-highlight text-title-h2">立即報名</div>
+      </div>
 
       <!-- top app-screen -->
     </div>
@@ -805,6 +954,293 @@ onMounted(() => {
     { scale: 1140 / 1175, transformOrigin: "bottom" },
     0,
   );
+
+  tl_4_7_6.from([".section5__cloud-left"], { opacity: 0, x: -400, y: 100 }, 0);
+  tl_4_7_6.from([".section5__cloud-right"], { opacity: 0, x: 400, y: 100 }, 0);
+  tl_4_7_6.from([".section5__text2"], { opacity: 0, scale: 3 }, 0);
+
+  const tl_5_1 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_5_1,
+    trigger: ".scrollElement",
+    start: `${38000} top`,
+    end: `${38000 + 1000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_5_1.to(
+    [".section5__cloud-left"],
+    { opacity: 0, x: 200, y: -60, scale: 0.2 },
+    0,
+  );
+  tl_5_1.to(
+    [".section5__cloud-right"],
+    { opacity: 0, x: -200, y: -60, scale: 0.2 },
+    0,
+  );
+  tl_5_1.to([".section5__text2"], { opacity: 0 }, 0);
+
+  // 中間那隻 ch_ui 370 -> 182
+  // TODO: 位置要在喬一下，喬到跑道上
+  tl_5_1.to(
+    [".ch_f2e"],
+    { scale: 182 / 370, transformOrigin: "bottom right" },
+    0,
+  );
+  tl_5_1.to([".ch_ui"], { scale: 182 / 370, transformOrigin: "bottom" }, 0);
+  tl_5_1.to(
+    [".ch_team"],
+    { scale: 182 / 370, transformOrigin: "bottom left" },
+    0,
+  );
+  tl_5_1.to([".road-bg"], { scale: 840 / 1175, transformOrigin: "bottom" }, 0);
+
+  const tl_5_2 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_5_2,
+    trigger: ".scrollElement",
+    start: `${39000} top`,
+    end: `${39000 + 1000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_5_2.from([".section6__award_light"], { rotate: 360 }, 0);
+  tl_5_2.from(
+    [".section6__award", ".section6__content"],
+    { x: -180, opacity: 0 },
+    0,
+  );
+
+  const tl_5_3 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_5_3,
+    trigger: ".scrollElement",
+    start: `${40000} top`,
+    end: `${40000 + 1000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_5_3.to([".section6__title"], { opacity: 0 }, 0);
+  tl_5_3.to([".section6__award_light"], { rotate: -360 }, 0);
+  tl_5_3.to(
+    [".section6__award", ".section6__content"],
+    { x: 180, opacity: 0 },
+    0,
+  );
+
+  const tl_7_1 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_1,
+    trigger: ".scrollElement",
+    start: `${41000} top`,
+    end: `${41000 + 1000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_7_1.from([".section7__title"], { opacity: 0 }, 0);
+  tl_7_1.from([".section7__tree-left"], { opacity: 0, x: -400, y: 100 }, 0);
+  tl_7_1.from([".section7__tree-right"], { opacity: 0, x: 400, y: 100 }, 0);
+
+  // TODO: 少一個數的偏移 timeline
+  tl_7_1.from([".section7__logo-wrap-1"], { opacity: 0, y: 100 });
+  tl_7_1.from([".section7__logo-wrap-2"], { opacity: 0, y: 200 }).delay(1);
+  tl_7_1.from([".section7__logo-wrap-3"], { opacity: 0, y: 300 }).delay(2);
+
+  const tl_7_2 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_2,
+    trigger: ".scrollElement",
+    start: `${42000} top`,
+    end: `${42000 + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_7_2.to([".section7__title"], { opacity: 0 }, 0);
+  tl_7_2.to(
+    [
+      ".section7__logo-wrap-1",
+      ".section7__logo-wrap-2",
+      ".section7__logo-wrap-3",
+    ],
+    { opacity: 0, y: 40 },
+    0,
+  );
+
+  tl_7_2.to(
+    [".section7__tree-left"],
+    {
+      scale: 0.2,
+      opacity: 0,
+      x: "+=460",
+      y: "-=6",
+    },
+    0,
+  );
+
+  tl_7_2.to(
+    [".section7__tree-right"],
+    {
+      scale: 0.2,
+      opacity: 0,
+      x: "-=460",
+      y: "-=6",
+    },
+    0,
+  );
+
+  tl_7_2.from(
+    [".section7__cloud-left"],
+    {
+      x: "-=460",
+      y: "+=600",
+      opacity: 0,
+    },
+    0,
+  );
+
+  tl_7_2.from(
+    [".section7__cloud-right"],
+    {
+      x: "+=460",
+      y: "+=600",
+      opacity: 0,
+    },
+    0,
+  );
+
+  const tl_7_3 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_3,
+    trigger: ".scrollElement",
+    start: `${44000} top`,
+    end: `${44000 + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+  tl_7_3.to(
+    [".section7__cloud-left"],
+    {
+      x: "+=360",
+      y: "-=60",
+      opacity: 0.2,
+      scale: 0.4,
+    },
+    0,
+  );
+
+  tl_7_3.to(
+    [".section7__cloud-right"],
+    {
+      x: "-=360",
+      y: "-=60",
+      opacity: 0,
+      scale: 0.4,
+    },
+    0,
+  );
+
+  // 中間那隻 ch_ui 370 -> 220
+  // TODO: 位置要在喬一下，喬到跑道上
+  tl_7_3.to(
+    [".ch_f2e"],
+    { scale: 339 / 370, transformOrigin: "bottom right" },
+    0,
+  );
+  tl_7_3.to([".ch_ui"], { scale: 339 / 370, transformOrigin: "bottom" }, 0);
+  tl_7_3.to(
+    [".ch_team"],
+    { scale: 339 / 370, transformOrigin: "bottom left" },
+    0,
+  );
+  tl_7_3.to([".road-bg"], { scale: 1, transformOrigin: "bottom" }, 0);
+
+  tl_7_3.from([".section7__finish"], { opacity: 0 }, 0);
+  tl_7_3.from(
+    [".section7__finishLine_l", ".section7__finishLine_r"],
+    { scale: 1.2, y: "+=400" },
+    0,
+  );
+
+  const tl_7_4 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_4,
+    trigger: ".scrollElement",
+    start: `${46000} top`,
+    end: `${46000 + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_7_4.to([".section7__finishLine_l"], { rotate: -5, x: -20, y: 40 }, 0);
+  tl_7_4.to([".section7__finishLine_r"], { rotate: 5, x: 20, y: 40 }, 0);
+
+  // 中間那隻 ch_ui 370 -> 220
+  // TODO: 位置要在喬一下，喬到跑道上
+  tl_7_4.to([".ch_f2e"], { scale: 1, transformOrigin: "bottom right" }, 0);
+  tl_7_4.to([".ch_ui"], { scale: 1, transformOrigin: "bottom" }, 0);
+  tl_7_4.to([".ch_team"], { scale: 1, transformOrigin: "bottom left" }, 0);
+  // tl_7_4.to([".road-bg"], { scale: 1, transformOrigin: "bottom" }, 0);
+
+  const tl_7_5 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_5,
+    trigger: ".scrollElement",
+    start: `${48000} top`,
+    end: `${48000 + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_7_5.to([".section7__finishLine_l"], { opacity: 0, x: -400, y: 40 }, 0);
+  tl_7_5.to([".section7__finishLine_r"], { opacity: 0, x: 400, y: 40 }, 0);
+  tl_7_5.to([".ch_f2e"], { scale: 1.3, transformOrigin: "bottom right" }, 0);
+  tl_7_5.to([".ch_ui"], { scale: 1.3, transformOrigin: "bottom" }, 0);
+  tl_7_5.to([".ch_team"], { scale: 1.3, transformOrigin: "bottom left" }, 0);
+
+  const tl_7_6 = gsap.timeline();
+
+  scrollTrigger.create({
+    animation: tl_7_6,
+    trigger: ".scrollElement",
+    start: `${50000} top`,
+    end: `${50000 + 2000} 100%`,
+    scrub: 1,
+    markers: true,
+  });
+
+  tl_7_6.to(
+    [".ch_f2e"],
+    { opacity: 0, scale: 1.7, transformOrigin: "bottom right" },
+    0,
+  );
+  tl_7_6.to(
+    [".ch_ui"],
+    { opacity: 0, scale: 1.7, transformOrigin: "bottom" },
+    0,
+  );
+  tl_7_6
+    .to(
+      [".ch_team"],
+      { opacity: 0, scale: 1.7, transformOrigin: "bottom left" },
+      0,
+    )
+    .delay(1);
+
+  tl_7_6.to([".section7__finish"], { opacity: 0 }, 0.5);
+  tl_7_6.from([".section7__logo", ".section7__join"], { opacity: 0 }, 2);
 });
 </script>
 
@@ -1027,7 +1463,8 @@ body {
 // sectino2
 .section2-title,
 .section3-title,
-.section4-title {
+.section4-title,
+.section6__title {
   position: absolute;
   top: relative-height-percent(40px);
   left: relative-width-percent(592px);
@@ -1037,6 +1474,14 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+.section7__title {
+  position: absolute;
+  top: relative-height-percent(40px);
+  left: relative-width-percent(592px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // TODO: 位置大小要再調整
@@ -1197,6 +1642,96 @@ body {
     top: relative-height-percent(80px);
     height: relative-height-percent(392px);
     left: relative-width-percent(1301.5px);
+  }
+
+  &__cloud-left {
+    @include tlwh(396px, 206px, 368px, 178px);
+  }
+  &__cloud-right {
+    @include trwh(292px, 114px, 450px, 333.5px);
+  }
+
+  &__text2 {
+    position: absolute;
+    top: relative-height-percent(232px);
+    // @include trwh(292px, 114px, 450px, 333.5px);
+  }
+}
+
+.section6 {
+  &__content {
+    @include tlwh(251px, 795px, 765px, 360px);
+  }
+  &__award {
+    @include tlwh(251px, 360px, 375px, 375px);
+  }
+
+  &__award_light {
+    position: absolute;
+  }
+  &__award_trophy {
+    position: absolute;
+  }
+}
+.section7 {
+  &__tree-left {
+    @include tlwh(540px, 300px, 351px, 548px);
+    transform: rotateY(180deg);
+  }
+  &__tree-right {
+    @include trwh(566px, 342px, 351px, 548px);
+  }
+
+  &__logo-wrap-1 {
+    @include tlwh(244px, 362px, 315px, 369px);
+    img {
+      width: 100%;
+    }
+  }
+  &__logo-wrap-2 {
+    @include tlwh(244px, 802px, 315px, 369px);
+    img {
+      width: 100%;
+    }
+  }
+  &__logo-wrap-3 {
+    @include tlwh(244px, 1243px, 315px, 369px);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__cloud-left {
+    @include tlwh(423px, 142px, 430px, 280px);
+    z-index: 10;
+  }
+
+  &__cloud-right {
+    @include trwh(455px, 91px, 485px, 255px);
+    z-index: 10;
+  }
+
+  &__finish {
+    @include tlwh(0px, 245px, 1430px, 1080px);
+  }
+
+  &__finishLine_l {
+    // 1920/ 2
+    @include tlwh(731px, 15px, 960px, 129.5px);
+    z-index: 10;
+  }
+  &__finishLine_r {
+    @include trwh(731px, 15px, 960px, 129.5px);
+    z-index: 10;
+  }
+
+  &__logo {
+    @include tlwh(124px, 700px, 520px, 387.15px);
+    z-index: 10;
+  }
+
+  &__join {
+    @include tlwh(540px, 836px, 249px, 304.71px);
   }
 }
 
