@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $tablet: 640px;
 $ipad: 768px;
 $laptop:1024px;
@@ -34,3 +36,45 @@ $large-desktop: 1536px;
   }
 }
 
+
+
+@mixin tlwh($top, $left, $width, $height) {
+  position: fixed;
+  top: relative-height-percent($top);
+  left: relative-width-percent($left);
+  width: relative-width-percent($width);
+  height: relative-height-percent($height);
+}
+
+@mixin trwh($top, $right, $width, $height) {
+  position: fixed;
+  top: relative-height-percent($top);
+  right: relative-width-percent($right);
+  width: relative-width-percent($width);
+  height: relative-height-percent($height);
+}
+
+@mixin blwh($bottom, $left, $width, $height) {
+  position: fixed;
+  bottom: relative-height-percent($bottom);
+  left: relative-width-percent($left);
+  width: relative-width-percent($width);
+  height: relative-height-percent($height);
+}
+
+
+@function relative-height-percent($value) {
+  @return math.div($value, 1080px) * 100%;
+}
+
+@function relative-width-percent($value) {
+  @return math.div($value, 1920px) * 100%;
+}
+
+@function relative-light-height-percent($value) {
+  @return math.div($value, 108px) * 100%;
+}
+
+@function relative-light-width-percent($value) {
+  @return math.div($value, 275px) * 100%;
+}
