@@ -1,6 +1,6 @@
 <template>
   <section class="section-three_topic">
-    <SectionTitle class="three_topic-title" imgUrl="/images/text/talking_4.png" />
+    <SectionTitle class="three_topic-title" :imgUrl="titleImg" />
     <div class="section4__subtitle text-secondary-dark text-title-h5">
       各路廠商強強聯手<br />
       共同設計出接地氣的網頁互動挑戰關卡
@@ -58,6 +58,8 @@ import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 import SectionTitle from "./common/SectionTitle.vue";
+import titleImg from "../assets/images/text/talking_4.png";
+
 const showMarker = process.env.NODE_ENV !== "production";
 
 onMounted(() => {
@@ -70,26 +72,31 @@ onMounted(() => {
       scrub: true,
       markers: showMarker,
     },
+    defaults: {
+      duration: 6,
+    },
   });
+
   timeLineStage
     .from([".three_topic-title", ".section4__subtitle"], { opacity: 0, duration: 6 })
-    .to([".ch_f2e"], { scale: 120 / 370, transformOrigin: "bottom right", duration: 1 }, ">")
-    .to([".ch_ui"], { scale: 120 / 370, transformOrigin: "bottom" }, "<")
-    .to([".ch_team"], { scale: 120 / 370, transformOrigin: "bottom left" }, "<")
-    .to([".road-bg"], { scale: 800 / 1175, transformOrigin: "bottom" }, "<")
-    .from([".section4__stage1"], { opacity: 0, y: 260, duration: 6 }, ">")
+    .to([".ch_f2e"], { scale: 120 / 370, transformOrigin: "bottom right", duration: 6 })
+    .to([".ch_ui"], { scale: 120 / 370, transformOrigin: "bottom", duration: 6 }, "<")
+    .to([".ch_team"], { scale: 120 / 370, transformOrigin: "bottom left", duration: 6 }, "<")
+    .to([".road-bg"], { scale: 800 / 1175, transformOrigin: "bottom", duration: 6 }, "<")
 
-    .to([".section4__stage1"], { opacity: 0.2, y: -240, duration: 6 }, ">")
-    .from([".section4__stage2"], { opacity: 0, y: 260 }, ">")
+    .from([".section4__stage1"], { opacity: 0, y: "95%", duration: 6 }, ">")
 
-    .to([".section4__stage1"], { opacity: 0, y: -260, duration: 6 }, ">")
-    .to([".section4__stage2"], { opacity: 0.2, y: -240 }, ">")
-    .from([".section4__stage3"], { opacity: 0, y: 260 }, ">")
+    .to([".section4__stage1"], { y: "-80%", opacity: 0.4, duration: 6 })
+    .from([".section4__stage2"], { opacity: 0, y: "95%", duration: 6 }, "<")
 
-    .to([".section4__stage2"], { opacity: 0, y: -260, duration: 6 })
-    .to([".section4__stage3"], { opacity: 0.2, y: -240 })
+    .to([".section4__stage1"], { opacity: 0, y: "-140%", duration: 6 })
+    .to([".section4__stage2"], { y: "-80%", opacity: 0.4, duration: 6 }, "<")
+    .from([".section4__stage3"], { opacity: 0, y: "95%", duration: 6 }, "<")
 
-    .to([".section4__stage3"], { opacity: 0, y: -260, duration: 6 }, ">")
+    .to([".section4__stage2"], { opacity: 0, y: "-140%", duration: 6 })
+    .to([".section4__stage3"], { y: "-80%", opacity: 0.4 })
+
+    .to([".section4__stage3"], { opacity: 0, y: "-140%", duration: 6 }, ">")
     // 中間那隻 ch_ui 370 -> 220
     // TODO: 位置要在喬一下，喬到跑道上
     .to([".three_topic-title", ".section4__subtitle"], { opacity: 0 }, ">")

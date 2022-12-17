@@ -86,6 +86,7 @@ onMounted(() => {
 
     .to([".traffic-light-area", ".f2e-info-area"], { opacity: 0, duration: 4 })
     .to([".title-text", ".logo-text", ".start-bg"], { opacity: 0, duration: 4 }, ">")
+    .from([".main-logo"], { opacity: 0, duration: 4 }, "<")
 
     // 隱藏兩邊的雲
     .to([".cloud-left", ".cloud-right", ".traffic-light-area", ".f2e-info-area", ".start-bg", ".logo-text"], { display: "none" });

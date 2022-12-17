@@ -38,6 +38,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.11.9.tgz"
   "version" "18.11.9"
 
+"@types/web-bluetooth@^0.0.16":
+  "integrity" "sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ=="
+  "resolved" "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz"
+  "version" "0.0.16"
+
 "@vitejs/plugin-vue@^3.2.0":
   "integrity" "sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw=="
   "resolved" "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz"
@@ -182,6 +187,28 @@
   "integrity" "sha512-W9mfWLHmJhkfAmV+7gDjcHeAWALQtgGT3JErxULl0oz6R6+3ug91I7IErs93eCFhPCZPHBs4QJS7YWEV7A3sxw=="
   "resolved" "https://registry.npmjs.org/@vue/shared/-/shared-3.2.41.tgz"
   "version" "3.2.41"
+
+"@vueuse/core@^9.7.0":
+  "integrity" "sha512-/AGY/t7jJPxCyRoVTygNKoroTiCvRaaZIW+yeSlBCnI7QRpQ9cvXNTdNaSl3GvSyFbn83+XwZwEZvI1OpQfeGw=="
+  "resolved" "https://registry.npmjs.org/@vueuse/core/-/core-9.7.0.tgz"
+  "version" "9.7.0"
+  dependencies:
+    "@types/web-bluetooth" "^0.0.16"
+    "@vueuse/metadata" "9.7.0"
+    "@vueuse/shared" "9.7.0"
+    "vue-demi" "*"
+
+"@vueuse/metadata@9.7.0":
+  "integrity" "sha512-M7WsAgw28FNtTH0bzsGuHEtJOPJqPpyeHS6PHq+8UesLgNjZ9waMAntiUrgUQlxt09M4i2lH7y9sRi0jkfeXGA=="
+  "resolved" "https://registry.npmjs.org/@vueuse/metadata/-/metadata-9.7.0.tgz"
+  "version" "9.7.0"
+
+"@vueuse/shared@9.7.0":
+  "integrity" "sha512-pwmt1y3TJ2s5KqWmkv9ZKEV59GwuZQZk8XLiU+hGswz0jej318ozbea9E4A/A50ksyM26swSFr7sZ9llNPsZHg=="
+  "resolved" "https://registry.npmjs.org/@vueuse/shared/-/shared-9.7.0.tgz"
+  "version" "9.7.0"
+  dependencies:
+    "vue-demi" "*"
 
 "acorn-node@^1.8.2":
   "integrity" "sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A=="
@@ -784,6 +811,11 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-demi@*":
+  "integrity" "sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A=="
+  "resolved" "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.11.tgz"
+  "version" "0.13.11"
+
 "vue-router@^4.1.6":
   "integrity" "sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.1.6.tgz"
@@ -807,7 +839,7 @@
     "@volar/vue-language-core" "1.0.9"
     "@volar/vue-typescript" "1.0.9"
 
-"vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.41", "vue@3.2.41":
+"vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.41", "vue@3.2.41":
   "integrity" "sha512-uuuvnrDXEeZ9VUPljgHkqB5IaVO8SxhPpqF2eWOukVrBnRBx2THPSGQBnVRt0GrIG1gvCmFXMGbd7FqcT1ixNQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.41.tgz"
   "version" "3.2.41"

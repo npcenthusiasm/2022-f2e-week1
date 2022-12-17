@@ -1,6 +1,6 @@
 <template>
   <section class="section-webdesign">
-    <SectionTitle class="section3__title" imgUrl="/images/text/talking_3.png" />
+    <SectionTitle class="section3__title" :imgUrl="titleImg" />
     <div class="section3__subtitle text-secondary-dark text-title-h5">以下兩個角色進行攜手合作</div>
 
     <div class="section3__btn_join_1 flex flex-col items-center justify-center">
@@ -25,6 +25,7 @@ import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 import SectionTitle from "./common/SectionTitle.vue";
+import titleImg from "../assets/images/text/talking_3.png";
 const showMarker = process.env.NODE_ENV !== "production";
 
 onMounted(() => {
@@ -40,10 +41,10 @@ onMounted(() => {
   });
   timeLineStage
     .from([".section3__title", ".section3__subtitle"], { opacity: 0, duration: 5 })
-    .from([".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"], { opacity: 0, y: 60, duration: 5 }, ">")
+    .from([".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"], { opacity: 0, y: 60, duration: 10 }, ">")
 
     .to([".section3__title", ".section3__subtitle"], { opacity: 0, duration: 5 })
-    .to([".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"], { opacity: 0, y: 60, duration: 5 }, "<")
+    .to([".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"], { opacity: 0, y: 60, duration: 10 }, "<")
     // 把一些用不到隱藏
     .to([".section3__title", ".section3__subtitle", ".section3__btn_join_1", ".section3__btn_join_2", ".section3__btn_join_3"], {
       display: "none",

@@ -2,6 +2,8 @@ body {
   font-size: 16px;
   letter-spacing: 0.05em;
   font-weight: 500;
+
+  font-family: 'Gen Jyuu Gothic P';
   @include ipad {
     font-size: 18px;
   }
@@ -49,4 +51,14 @@ body {
   @include ipad {
     font-size: 24px;
   }
+}
+
+
+:root {
+
+  --gradientPercent: 20%
+}
+
+img {
+  user-select: none;
 }

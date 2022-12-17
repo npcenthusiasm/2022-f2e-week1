@@ -1,6 +1,6 @@
 <template>
   <section class="race-pride-section">
-    <SectionTitle class="section6__title" imgUrl="/images/text/talking_6.png" />
+    <SectionTitle class="section6__title" :imgUrl="titleImg" />
 
     <!-- 這邊想要下怎麼不要用 abs -->
     <div class="section6__award">
@@ -44,6 +44,7 @@ import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 import SectionTitle from "./common/SectionTitle.vue";
+import titleImg from "../assets/images/text/talking_6.png";
 
 const showMarker = process.env.NODE_ENV !== "production";
 

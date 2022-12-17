@@ -1,6 +1,6 @@
 <template>
   <section class="questions">
-    <SectionTitle class="section2__title" imgUrl="/images/text/talking_2.png" />
+    <SectionTitle class="section2__title" :imgUrl="titleImg" />
 
     <img src="/images/bg/bg_decorate_09.png" alt="" class="grass-left" />
     <img src="/images/bg/bg_decorate_10.png" alt="" class="grass-right" />
@@ -27,6 +27,8 @@ import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 import SectionTitle from "./common/SectionTitle.vue";
+import titleImg from "../assets/images/text/talking_2.png";
+
 const showMarker = process.env.NODE_ENV !== "production";
 
 onMounted(() => {

@@ -1,24 +1,24 @@
 <template>
   <section class="sub-unit-section">
-    <SectionTitle class="section7__title" imgUrl="/images/text/talking_7.png" />
+    <SectionTitle class="section7__title" :imgUrl="titleImg" />
 
     <img src="/images/bg/bg_decorate_08.png" alt="" class="section7__tree-left" />
     <img src="/images/bg/bg_decorate_08.png" alt="" class="section7__tree-right" />
 
     <div class="section7__logo-wrap-1 text-center">
-      <img src="/images/main/logo_blockstudio.png" alt="" class="mb-4" />
+      <img src="/images/main/logo_blockstudio_border.png" alt="" class="mb-4" />
 
       <div class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4">#版塊設計</div>
     </div>
 
     <div class="section7__logo-wrap-2 text-center">
-      <img src="/images/main/logo_titansoft.png" alt="" class="mb-4" />
+      <img src="/images/main/logo_titansoft_border.png" alt="" class="mb-4" />
 
       <div class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4">#鈦坦科技</div>
     </div>
 
     <div class="section7__logo-wrap-3 text-center">
-      <img src="/images/main/logo_kdanmobile.png" alt="" class="mb-4" />
+      <img src="/images/main/logo_kdanmobile_border.png" alt="" class="mb-4" />
 
       <div class="inline-block px-6 py-1 rounded-full border border-secondary-dark text-secondary-dark text-highlight-desc mr-4">#凱鈿科技</div>
     </div>
@@ -34,8 +34,7 @@
     <img src="/images/logo/logo.png" alt="" class="section7__logo" />
 
     <div class="section7__join text-center">
-      <img src="/images/btn/btn_joinHand.png" alt="" class="btn_joinHand" />
-      <img src="/images/btn/btn_join.png" alt="" class="btn_join mb-5" />
+      <img src="/images/btn/btn_final_hand.png" alt="" class="btn_join mb-5" />
       <div class="text-highlight text-title-h2">立即報名</div>
     </div>
   </section>
@@ -46,6 +45,7 @@ import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 import SectionTitle from "./common/SectionTitle.vue";
+import titleImg from "../assets/images/text/talking_7.png";
 
 const showMarker = process.env.NODE_ENV !== "production";
 
@@ -60,6 +60,9 @@ onMounted(() => {
       scrub: true,
       markers: showMarker,
     },
+    defaults: {
+      duration: 6,
+    },
   });
 
   timeLineStage
@@ -68,52 +71,54 @@ onMounted(() => {
     .from([".section7__tree-right"], { opacity: 0, x: 400, y: 100 }, "<")
 
     // TODO: 少一個數的偏移 timeline
-    .from([".section7__logo-wrap-1"], { opacity: 0, y: 100 }, "<")
+    .from([".section7__logo-wrap-1"], { opacity: 0, y: 100 })
     .from([".section7__logo-wrap-2"], { opacity: 0, y: 200 })
     .from([".section7__logo-wrap-3"], { opacity: 0, y: 300 })
 
     .to([".section7__title"], { opacity: 0 })
     .to([".section7__logo-wrap-1", ".section7__logo-wrap-2", ".section7__logo-wrap-3"], { opacity: 0, y: 40 })
-    .to([".section7__tree-left"], { scale: 0.2, opacity: 0, x: "+=460", y: "-=6" })
+    .to([".section7__tree-left"], { scale: 0.2, opacity: 0, x: "+=460", y: "-=6" }, "<")
     .to([".section7__tree-right"], { scale: 0.2, opacity: 0, x: "-=460", y: "-=6" }, "<")
 
     .from([".section7__cloud-left"], { x: "-=460", y: "+=600", opacity: 0 })
     .from([".section7__cloud-right"], { x: "+=460", y: "+=600", opacity: 0 }, "<")
 
-    .to([".section7__cloud-left"], { x: "+=360", y: "-=60", opacity: 0, scale: 0.4 })
-    .to([".section7__cloud-right"], { x: "-=360", y: "-=60", opacity: 0, scale: 0.4 }, "<")
+    .to([".section7__cloud-left"], { x: "+=360", y: "-=60", opacity: 0, scale: 0.4, duration: 40 })
+    .to([".section7__cloud-right"], { x: "-=340", y: "-=60", opacity: 0, scale: 0.4, duration: 40 }, "<")
     // 中間那隻 ch_ui 370 -> 220
     // TODO: 位置要在喬一下，喬到跑道上
-    .to([".ch_f2e"], { scale: 339 / 370, transformOrigin: "bottom right" })
+    .to([".ch_f2e"], { scale: 339 / 370, transformOrigin: "bottom right" }, "<")
     .to([".ch_ui"], { scale: 339 / 370, transformOrigin: "bottom" }, "<")
     .to([".ch_team"], { scale: 339 / 370, transformOrigin: "bottom left" }, "<")
     .to([".road-bg"], { scale: 1, transformOrigin: "bottom" }, "<")
 
-    .from([".section7__finish"], { display: "none", opacity: 0 })
-    .from([".section7__finishLine_l", ".section7__finishLine_r"], { scale: 1.2, y: "+=400" })
+    .from([".section7__finish"], { display: "none", opacity: 0 }, "<")
+    .from([".section7__finishLine_l", ".section7__finishLine_r"], { scale: 1.2, y: "+=400", duration: 20 }, "<")
 
-    .to([".section7__finishLine_l"], { rotate: -5, x: -20, y: 40 })
+    .to([".section7__finishLine_l"], { rotate: -5, x: -20, y: 40 }, ">-1")
     .to([".section7__finishLine_r"], { rotate: 5, x: 20, y: 40 }, "<")
 
     // 中間那隻 ch_ui 370 -> 220
     // TODO: 位置要在喬一下，喬到跑道上
-    .to([".ch_f2e"], { scale: 1, transformOrigin: "bottom right" })
+    .to([".ch_f2e"], { scale: 1, transformOrigin: "bottom right" }, "<+2")
     .to([".ch_ui"], { scale: 1, transformOrigin: "bottom" }, "<")
     .to([".ch_team"], { scale: 1, transformOrigin: "bottom left" }, "<")
 
-    .to([".section7__finishLine_l"], { opacity: 0, x: -400, y: 40 })
+    .to([".section7__finishLine_l"], { opacity: 0, x: -400, y: 40 }, "<+2")
     .to([".section7__finishLine_r"], { opacity: 0, x: 400, y: 40 }, "<")
 
-    .to([".ch_f2e"], { scale: 1.3, transformOrigin: "bottom right" })
+    .to([".ch_f2e"], { scale: 1.3, transformOrigin: "bottom right" }, "<+2")
     .to([".ch_ui"], { scale: 1.3, transformOrigin: "bottom" }, "<")
     .to([".ch_team"], { scale: 1.3, transformOrigin: "bottom left" }, "<")
 
-    .to([".ch_f2e"], { opacity: 0, scale: 1.7, transformOrigin: "bottom right" })
+    .to([".ch_f2e"], { opacity: 0, scale: 1.7, transformOrigin: "bottom right" }, "<+2")
     .to([".ch_ui"], { opacity: 0, scale: 1.7, transformOrigin: "bottom" }, "<")
     .to([".ch_team"], { opacity: 0, scale: 1.7, transformOrigin: "bottom left" }, "<")
     .delay(1)
 
-    .to([".section7__finish"], { opacity: 0 })
+    .to([".section7__finish"], { opacity: 0 }, "<+2")
+    // 隱藏左上 logo
+    .to(".main-logo", { opacity: 0 }, "<")
     .from([".section7__logo"], { y: 200, opacity: 0, duration: 1 })
     .from([".section7__join"], { y: 300, opacity: 0, duration: 2 }, "<");
 });
@@ -122,7 +127,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 @import "@/assets/scss/mixin";
 .sub-unit-section {
-  height: 100vh;
+  height: 200vh;
 
   .section7 {
     &__tree-left {
@@ -182,7 +187,14 @@ onMounted(() => {
     }
 
     &__join {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       @include tlwh(540px, 836px, 249px, 304.71px);
+      img {
+        width: 160px;
+      }
     }
   }
 }

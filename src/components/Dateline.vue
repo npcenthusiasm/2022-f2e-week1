@@ -5,11 +5,11 @@
       <img class="section5__dateline" src="/images/main/date_line.png" alt="" />
     </div>
 
-    <div>
+    <div class="section5__date-container">
       <img class="section5__date_weekLine1" src="/images/main/date_weekLine.png" alt="" />
       <div class="section5__date_weekLine1-content">
         <div class="section5__btn_join_1 flex flex-col items-center justify-center">
-          <img src="/images/btn/btn_join.png" alt="" class="mb-4" width="103" />
+          <img src="/images/btn/date_week1_pointer.png" alt="" class="mb-4" width="103" />
           <div class="text-highlight text-title-h2">SIGN UP</div>
           <div class="inline-block px-6 py-1 rounded-full text-title-h4 border border-primary bg-primary text-white mb-3">10/13 - 11/6</div>
           <div class="text-secondary-dark text-center">截止前可修改報名組別</div>
@@ -58,7 +58,7 @@
 import { onMounted } from "vue";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
-import SectionTitle from "./common/SectionTitle.vue";
+// import SectionTitle from "./common/SectionTitle.vue";
 
 const showMarker = process.env.NODE_ENV !== "production";
 
@@ -72,6 +72,9 @@ onMounted(() => {
       // end: "top 1%",
       scrub: true,
       markers: showMarker,
+    },
+    defaults: {
+      duration: 6,
     },
   });
 
@@ -104,8 +107,8 @@ onMounted(() => {
     .from([".section5__cloud-left"], { opacity: 0, x: -400, y: 100 }, "<")
     .from([".section5__cloud-right"], { opacity: 0, x: 400, y: 100 }, "<")
 
-    .to([".section5__cloud-left"], { opacity: 0, x: 200, y: -60, scale: 0.2 })
-    .to([".section5__cloud-right"], { opacity: 0, x: -200, y: -60, scale: 0.2 }, "<")
+    .to([".section5__cloud-left"], { opacity: 0, x: 300, y: -60, scale: 0.2 })
+    .to([".section5__cloud-right"], { opacity: 0, x: -300, y: -60, scale: 0.2 }, "<")
     .to([".section5__text2"], { opacity: 0 }, "<");
 });
 </script>
@@ -153,6 +156,7 @@ onMounted(() => {
       top: relative-height-percent(426px);
       height: relative-height-percent(140px);
       left: relative-width-percent(936px);
+      clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0% 100%);
     }
 
     &__date_weekLine3 {
@@ -160,26 +164,43 @@ onMounted(() => {
       top: relative-height-percent(472px);
       height: relative-height-percent(140px);
       left: relative-width-percent(1444.5px);
+      clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%);
     }
-
-    &__date_weekLine1-content {
+    &__date-container {
       position: fixed;
-      top: relative-height-percent(80px);
-      height: relative-height-percent(392px);
-      left: relative-width-percent(300px);
+      top: relative-height-percent(140px);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 75%;
+      left: 12.5%;
+      right: 12.5%;
+    }
+    &__date_weekLine1-content {
+      /* position: fixed; */
+      /* top: relative-height-percent(180px); */
+      /* height: relative-height-percent(392px); */
+      /* left: relative-width-percent(300px); */
+      /* flex-basis: 302px; */
+      flex: 1;
+      /* max-width: 302px; */
     }
     &__date_weekLine2-content {
-      position: fixed;
-      top: relative-height-percent(80px);
-      height: relative-height-percent(392px);
-      left: relative-width-percent(786.5px);
+      /* position: fixed; */
+      /* top: relative-height-percent(140px); */
+      /* height: relative-height-percent(392px); */
+      /* left: relative-width-percent(820.5px); */
+      /* flex-basis: 338px; */
+      flex: 1;
     }
 
     &__date_weekLine3-content {
-      position: fixed;
-      top: relative-height-percent(80px);
-      height: relative-height-percent(392px);
-      left: relative-width-percent(1301.5px);
+      /* flex-basis: 318px; */
+      flex: 1;
+      /* position: fixed; */
+      /* top: relative-height-percent(80px); */
+      /* height: relative-height-percent(392px); */
+      /* left: relative-width-percent(1301.5px); */
     }
 
     &__cloud-left {
