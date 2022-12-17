@@ -264,7 +264,7 @@ watch(x, () => {
   text-align: center;
 
   transform: translateX(-135px);
-  background-image: url("../images/main/bg_menuSide.png");
+  background-image: url("/src/assets/images/main/bg_menuSide.png");
   background-repeat: no-repeat;
   background-position: right;
   transition: all 0.5s;
@@ -286,9 +286,9 @@ watch(x, () => {
 
     /* width: calc(135px + 20px); */
     .btn-close {
-      background-image: url("../images/btn/btn_burger_close.png");
+      background-image: url("/src/assets/images/btn/btn_burger_close.png");
       &:hover {
-        background-image: url("../images/btn/btn_burger_close_h.png");
+        background-image: url("/src/assets/images/btn/btn_burger_close_h.png");
       }
     }
   }
@@ -300,12 +300,12 @@ watch(x, () => {
     top: 50%;
     transform: translateY(-50%);
     right: -60px;
-    background-image: url("../images/btn/btn_burger_open.png");
+    background-image: url("/src/assets/images/btn/btn_burger_open.png");
     background-position: center;
     background-size: contain;
 
     &:hover {
-      background-image: url("../images/btn/btn_burger_open_h.png");
+      background-image: url("/src/assets/images/btn/btn_burger_open_h.png");
     }
 
     img {
